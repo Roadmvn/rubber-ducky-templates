@@ -9,6 +9,7 @@ Templates DuckyScript 3.0 pour le USB Rubber Ducky de Hak5 (modèle 2022).
 | Template | Cible | Effet |
 |---|---|---|
 | [ducked-macos](templates/ducked-macos/) | macOS, clavier AZERTY | Fenêtre plein écran sur chaque écran, espace pour quitter |
+| [multi-effets-macos](templates/multi-effets-macos/) | macOS, clavier AZERTY | Plusieurs effets sur la clé, choisis dans `choix.txt` ou au hasard |
 
 ## Compiler et installer un template
 

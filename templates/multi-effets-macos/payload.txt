@@ -1,0 +1,12 @@
+REM Multi-effets - lance l'effet ecrit dans choix.txt, ou un effet au hasard
+REM Cible: macOS clavier AZERTY. go.sh, choix.txt et effets/ a la racine du volume DUCKY.
+ATTACKMODE HID STORAGE
+DELAY 3000
+GUI SPACE
+DELAY 800
+STRING terminal
+DELAY 800
+ENTER
+DELAY 2500
+STRING sh /Volumes/DUCKY/go.sh
+ENTER
