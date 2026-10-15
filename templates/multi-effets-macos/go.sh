@@ -14,7 +14,7 @@ esac
 nohup osascript "$f" </dev/null >/dev/null 2>&1 &
 
 # On ne ferme que la fenetre du Ducky, reperee par son tty. Les fenetres de l'utilisateur
-# (Claude Code, un shell en cours...) restent intactes. Terminal ne quitte que s'il ne reste
+# (un shell en cours, un editeur...) restent intactes. Terminal ne quitte que s'il ne reste
 # que des fenetres vierges, c'est-a-dire celle creee par son propre lancement.
 nohup osascript \
   -e 'on run {t}' -e 'delay 1' -e 'tell application "Terminal"' \
