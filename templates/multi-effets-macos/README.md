@@ -21,9 +21,9 @@ Aucune image n'est fournie dans ce repo. Pour l'effet `anonymous`, dépose ton i
 
 ## Déroulé
 
-1. Le Ducky ouvre Terminal et tape seulement `sh /Volumes/DUCKY/go.sh`.
+1. Le Ducky active Terminal, ouvre sa propre fenêtre avec Cmd+N et tape `sh /Volumes/DUCKY/go.sh; exit`. Si Terminal était déjà ouvert, les fenêtres existantes ne reçoivent rien.
 2. `go.sh` lit `choix.txt` et lance l'effet en arrière-plan.
-3. `go.sh` quitte Terminal, mais seulement si sa fenêtre est la seule ouverte et qu'elle est vierge. Si Terminal était déjà ouvert, rien n'est fermé.
+3. `go.sh` ferme uniquement la fenêtre du Ducky, repérée par son tty. Terminal ne quitte que s'il ne reste aucune fenêtre avec un historique ou une commande en cours.
 
 Au premier branchement sur un Mac, cliquer sur Autoriser quand macOS demande l'accès de Terminal au volume amovible.
 
